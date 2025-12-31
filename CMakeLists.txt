@@ -19,12 +19,12 @@ find_package(OpenGL REQUIRED)
 
 target_include_directories(zhenEngine PRIVATE
     include/
-    third_party/GLFW/include/
+    third_party/GLFW/
 )
 
 # Linking libraries
 target_link_libraries(zhenEngine PRIVATE
     glad
     OpenGL::GL
-    "${CMAKE_SOURCE_DIR}/third_party/GLFW/lib/glfw3.lib"
+    "${CMAKE_SOURCE_DIR}/third_party/GLFW/glfw3.lib"
 )
