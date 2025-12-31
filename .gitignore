@@ -181,6 +181,10 @@ Doxyfile.bak
 third_party/*/build/
 third_party/*/cmake-build-*/
 
+# Cache directories
+.cache/
+.ccls-cache/
+
 # Asset compilation outputs (if compiling textures, etc.)
 assets/compiled/
 resources/compiled/
