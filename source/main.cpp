@@ -29,6 +29,22 @@ int main() {
     return -1;
   }
 
+  // build + compile shader program
+  // vertex shader
+  unsigned int vertexShader = glCreateShader(GL_VERTEX_SHADER);
+  // check for shader compile errors
+  // fragment shader
+  // check for shader compile errors
+  // link shaders
+  // check for shader linking errors
+
+  float vertices[] = {
+      -2.0f, -2.0, 0.0f,
+      2.0f, -2.0f, 0.0f,
+      0.0f, 2.0f, 0.0f
+  };
+
+
   glfwMakeContextCurrent(window);
 
   // error checking glad
